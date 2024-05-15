@@ -17,10 +17,10 @@ Route::get('/tampilan', function(){
     return view('tampilan');
 });
 
-Route::get('/', function () {
+Route::get('/dashboard', function () {
     $data = [
-        'content' =>
-    ]
+        'content' => 'admin.dashboard.index'
+    ];
     return view('admin.layouts.wrapper', $data);
 });
 
