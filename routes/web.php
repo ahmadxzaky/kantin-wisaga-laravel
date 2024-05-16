@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/tampilan', function(){
-    return view('tampilan');
-});
+
 
 Route::get('/dashboard', function () {
     $data = [
@@ -37,5 +35,7 @@ Route::get('/post', function () {
     ];
     return view('admin.layouts.wrapper', $data);
 });
+
+// Route::get('pesan/{id}', 'PesanController');
 
 
